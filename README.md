@@ -8,13 +8,14 @@ It includes:
 
 * Model training and evaluation
 * LIME explainability
-* Statistical comparison using Wilcoxon test
+* Statistical comparison using Friedman and Wilcoxon tests
 * Organized outputs for analysis
 
 ---
 
 ## 📁 Project Structure
 
+```text
 Project Structure
 │
 ├── AllResults
@@ -40,6 +41,9 @@ Project Structure
 │   └── wilcoxon_final_output (1).xlsx
 │
 └── README.md
+```
+
+---
 
 ## 🤖 Models Used
 
@@ -58,10 +62,11 @@ Project Structure
 ## 📊 Features
 
 * ✅ Multiple ML model comparison
-* ✅ Performance evaluation (accuracy, etc.)
-* ✅ LIME-based model explainability
-* ✅ Wilcoxon statistical test for model comparison
-* ✅ Organized output storage
+* ✅ Performance evaluation
+* ✅ LIME-based explainability
+* ✅ Friedman statistical test
+* ✅ Wilcoxon statistical test
+* ✅ Organized result storage
 
 ---
 
@@ -69,7 +74,7 @@ Project Structure
 
 Install dependencies using:
 
-```
+```bash
 pip install numpy pandas scikit-learn matplotlib seaborn xgboost lightgbm catboost lime shap
 ```
 
@@ -77,33 +82,39 @@ pip install numpy pandas scikit-learn matplotlib seaborn xgboost lightgbm catboo
 
 ## ▶️ How to Run
 
-1. Load dataset from `Dataset/`
-2. Train models and save them in `Model/`
-3. Generate results → stored in `AllResults/`
-4. Generate LIME explanations → saved in `LimeHtmlFile/`
+1. Open the notebook inside `models/`
+2. Load the dataset
+3. Train and evaluate models
+4. Generate LIME explanations
+5. Save outputs automatically
 
 ---
 
 ## 📈 Outputs
 
-* 📁 Model performance results → `AllResults/`
-* 📁 Saved models → `Model/`
-* 📁 LIME explanations → `LimeHtmlFile/`
+* 📁 Model accuracy and comparison results
+* 📁 Statistical analysis outputs
+* 📁 LIME explanation HTML files
 
 ---
 
 ## 🔬 Statistical Analysis
 
-Wilcoxon Signed-Rank Test is used to compare model performances and determine statistically significant differences.
+This project uses:
+
+* Friedman Test
+* Wilcoxon Signed-Rank Test
+
+to compare model performance statistically.
 
 ---
 
 ## 📌 Future Improvements
 
 * Add SHAP explainability
-* Improve model tuning
-* Add GUI or web interface
-* Convert project into production-ready pipeline
+* Improve hyperparameter tuning
+* Add web dashboard or GUI
+* Deploy as production pipeline
 
 ---
 
