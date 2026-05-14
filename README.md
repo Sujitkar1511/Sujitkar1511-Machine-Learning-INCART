@@ -15,18 +15,31 @@ It includes:
 
 ## 📁 Project Structure
 
-```
-Machine-Learning-With-Python/
+Project Structure
 │
-├── AllResults/        # Stores all model results, evaluation outputs
-├── Dataset/           # Contains dataset files used for training/testing
-├── LimeHtmlFile/      # LIME explanation HTML files
-├── Model/             # Saved trained models
+├── AllResults
+│   ├── catboost_results (2).xlsx
+│   ├── final_metric_ranking (1).xlsx
+│   ├── final_results.csv
+│   └── model_accuracy_results (1).csv
 │
-└── README.md          # Project documentation
-```
-
----
+├── FriedmanTest
+│   └── friedman_test_result.csv
+│
+├── LimeHtmlFile
+│   ├── lime_catboost (2).html
+│   ├── lime_explanation (2).html
+│   ├── lime_knn_explanation (2).html
+│   ├── lime_lightgbm (2).html
+│   └── lime_rf_explanation (2).html
+│
+├── models
+│   └── NewDataSet_Allmodel.ipynb
+│
+├── wilcoxon
+│   └── wilcoxon_final_output (1).xlsx
+│
+└── README.md
 
 ## 🤖 Models Used
 
